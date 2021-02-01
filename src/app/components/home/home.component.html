@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Listado de Jugadores</h1>
+    <table >
+      
+      <thead>
+            <tr>
+                <th>Id</th>
+                <th>Firs Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Detalle</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dataP of dataPerson;let dataId of dataPerson ">
+                    
+                <td>{{ dataP.id }}</td>
+                <td>{{ dataP.team.city }}</td>
+                <td>{{ dataP.last_name }}</td>
+                <td>{{ dataP.position }}</td>
+                <td><a routerLink='/player/:{{ dataId.id }}'>Ver mas..</a></td>
+                <td><a routerLink=player>Editar</a></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

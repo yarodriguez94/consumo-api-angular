@@ -1,0 +1,19 @@
+table {
+
+    width:100%;
+
+}
+th {
+
+    background-color:black;
+    color:white;
+}
+
+th,td {
+
+    text-align:center;
+    border: solid 0.1rem;
+    padding:0.5em;
+
+}
+
